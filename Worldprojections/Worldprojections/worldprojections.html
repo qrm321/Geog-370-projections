@@ -8,19 +8,43 @@
 <body>
     <h1>In this project I learned how to display images in different projections</h1>
     
-    <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2>
-    <p>You can write a paragraph here</p>
+    <h2 style="color:red">For this homework, I experimented and saw different projections of the world from QGIS</h2>
+    <p>The projections are all unique and have different distortions. It is interesting to see how and where the different projections are most distorted. In general, the most distorted parts of the maps are near the poles and at high latitudes.</p>
     
     <h2>WGS84 Projection</h2>
-    <h3>Some observations</h3>
+    <h3>This projection doesn't have a horrible amount of distortion. The circles are stretched somewhat horizontally. The longitude and latitude lines are still in a rectangular grid. The higher latitudes are more stretched and seem very large.</h3>
     <a href=".//maps/4326.png">
-    <img src=".//maps/4326.png" alt="WGS84" width='500px'>
+    <img src="./maps/WSG 84.png" alt="WGS84" width='500px'>
     </a>
     <h2>Aitoff Projection</h2>
+    <h3>Around the prime meridian the distortion is relatively small. As the longitude increases so does the distortion. The most distortion is at the corners of the grid.</h3>
+    <a href=".//maps/54043.png">
+    <img src="./maps/Aitoff.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>The distortion seriously increases as the latitude increases. Things around the equator look small. Antartica in this projection is obnoxiously large.</h2>
     <h3>Some observations</h3>
     <a href=".//maps/54043.png">
-    <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
+    <img src="./maps/Pseudo Mercator 1.png" alt="Pseudo Mercator" width='500px'>
     </a>
+    <h2>Sphere Winkle</h2>
+    <h3>The grid in this one is once again morphed. It looks like it is bulging out. The circles are somewhat distorted but it doesn't seem to be too extreme.</h3>
+    <a href=".//maps/4326.png">
+    <img src="./maps/Sphere Winkle.png" alt="WGS84" width='500px'>
+    </a>
+    <h2>Sphere Cylindrical Equal Area</h2>
+    <h3>The distortion seems pretty consistent from 60 degrees north to 60 degrees south latitude. At the poles the distortion increases a lot. The contintinents look like they are being crushed and flattened.</h3>
+    <a href=".//maps/54043.png">
+    <img src="./maps/Sphere Cylindrical Equal Area.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>North Pole Azimuthal</h2>
+    <h3>Most of thee continents seem fairlt accurate and consistent. It gradually increases in distortion as you move away from the center. It does look like Antartica circles the entire world and is huge.</h3>
+    <a href=".//maps/4326.png">
+    <img src="./maps/North Pole Azimuthal.png" alt="WGS84" width='500px'>
+    </a>
+    <h2>South Pole Equidistant</h2>
+    <h3>This map doesn't seem very usable or practicle. This is the one projection I have seen where antartica is represented accurately. However, it is difficult to tell what the other continents look like and it begins to look like a jumbled mess.</h3>
+    <a href=".//maps/54043.png">
+    <img src="./maps/South Pole equidistant.png" alt="Aitoff" width='500px'>
     <h2 style="color:red">Now, you should <u>add the following projections on your own:</u></h2>
     <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
     <p></p>
